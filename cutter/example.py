@@ -1,4 +1,5 @@
 """Example of code."""
+import typer
 
 
 def hello(name: str) -> str:
@@ -16,4 +17,9 @@ def hello(name: str) -> str:
             >>> hello("Roman")
             'Hello Roman!'
     """
+    print(f"Hello {name}!")
     return f"Hello {name}!"
+
+
+if __name__ == "__main__":
+    typer.run(hello)
